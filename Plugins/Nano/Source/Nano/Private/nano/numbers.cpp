@@ -53,7 +53,7 @@ void nano::uint256_union::encode_account (std::string & destination_a) const
 		number_l >>= 5;
 		destination_a.push_back (account_encode (r));
 	}
-	destination_a.append ("_onan"); // nano_
+	destination_a.append ("_nab"); // nano_
 	std::reverse (destination_a.begin (), destination_a.end ());
 }
 
@@ -70,7 +70,7 @@ bool nano::uint256_union::decode_account (std::string const & source_a)
 	if (!error)
 	{
 		auto xrb_prefix (source_a[0] == 'x' && source_a[1] == 'r' && source_a[2] == 'b' && (source_a[3] == '_' || source_a[3] == '-'));
-		auto nano_prefix (source_a[0] == 'n' && source_a[1] == 'a' && source_a[2] == 'n' && source_a[3] == 'o' && (source_a[4] == '_' || source_a[4] == '-'));
+		auto nano_prefix (source_a[0] == 'b' && source_a[1] == 'a' && source_a[2] == 'n' && (source_a[3] == '_' || source_a[3] == '-'));
 		error = (xrb_prefix && source_a.size () != 64) || (nano_prefix && source_a.size () != 65);
 		if (!error)
 		{

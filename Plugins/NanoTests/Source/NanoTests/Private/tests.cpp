@@ -124,15 +124,15 @@ bool FNanoBlueprintLibraryTest::RunTest(const FString& Parameters) {
 	TestEqual(TEXT("PrivateKeyFromSeed"), privateKey, UNanoBlueprintLibrary::PrivateKeyFromSeed(seed, 0));
 	TestEqual(TEXT("PublicKeyFromSeed"), TEXT("1B228F3ACFE9508A331987746845DA25044D48D290489D015B1A39724A8BEFE7"),
 		UNanoBlueprintLibrary::PublicKeyFromSeed(seed, 0));
-	TestEqual(TEXT("AccountFromSeed"), TEXT("nano_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
+	TestEqual(TEXT("AccountFromSeed"), TEXT("ban_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
 		UNanoBlueprintLibrary::AccountFromSeed(seed, 0));
-	TestEqual(TEXT("AccountFromPublicKey"), TEXT("nano_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
+	TestEqual(TEXT("AccountFromPublicKey"), TEXT("ban_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
 		UNanoBlueprintLibrary::AccountFromPublicKey("1B228F3ACFE9508A331987746845DA25044D48D290489D015B1A39724A8BEFE7"));
 	TestEqual(TEXT("PublicKeyFromAccount"), TEXT("1B228F3ACFE9508A331987746845DA25044D48D290489D015B1A39724A8BEFE7"),
-		UNanoBlueprintLibrary::PublicKeyFromAccount("nano_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"));
+		UNanoBlueprintLibrary::PublicKeyFromAccount("ban_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"));
 	TestEqual(TEXT("PublicKeyFromPrivateKey"), TEXT("1B228F3ACFE9508A331987746845DA25044D48D290489D015B1A39724A8BEFE7"),
 		UNanoBlueprintLibrary::PublicKeyFromPrivateKey(privateKey));
-	TestEqual(TEXT("AccountFromPrivateKey"), TEXT("nano_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
+	TestEqual(TEXT("AccountFromPrivateKey"), TEXT("ban_18s4jwxeztcijasjm3unf34xnba6bo6f764amn1op8jsgb7aquz9ke8njujm"),
 		UNanoBlueprintLibrary::AccountFromPrivateKey(privateKey));
 
 	TestEqual(

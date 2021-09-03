@@ -1,12 +1,12 @@
-# UE4NanoPlugin
-Plugin for integrating the Nano cryptocurrency into the Unreal Engine 4.
+# UE4BananoPlugin
+Plugin for integrating the Banano cryptocurrency into the Unreal Engine 4.
 
 Tested on Windows/Linux/MacOS/Android/iOS with Unreal Enginge 4.25.3
 
 Features include: functions for processing blocks, creating seeds + reading/saving them to disk in password-protected encrypted files. Generating qr codes, listening for payments to single accounts, private key payouts and many more
 
 ### How to test the plugin:
-1 - `git clone https://github.com/wezrule/UE4NanoPlugin`  
+1 - `git clone https://github.com/Kaffidev/UE4BananoPlugin`  
 2 - Open the project `UENano.uproject` (if there is an error then right click and generate project files, open up and build manually)  
 3 - The rpc/websocket settings are located in NanoGameInstance blueprint (leave unchanged to use the publically available servers)  
 4 - Run the map, first create a seed then top up the account and try all the other functions (a video is coming soon demonstrating this)  

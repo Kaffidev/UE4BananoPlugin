@@ -197,7 +197,7 @@ public:
 	FString rpcUrl;
 
 	UPROPERTY(EditAnywhere, Category = "NanoManager")
-	FString defaultRepresentative{"nano_1iuz18n4g4wfp9gf7p1s8qkygxw7wx9qfjq6a9aq68uyrdnningdcjontgar"};
+	FString defaultRepresentative{"ban_1iuz18n4g4wfp9gf7p1s8qkygxw7wx9qfjq6a9aq68uyrdnningdcjontgar"};
 
 private:
 	std::unordered_map<std::string, PrvKeyAutomateDelegate> keyDelegateMap;

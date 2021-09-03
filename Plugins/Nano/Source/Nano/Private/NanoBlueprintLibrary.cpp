@@ -113,7 +113,7 @@ FString UNanoBlueprintLibrary::NanoToRaw(FString nano) {
 			break;
 		}
 	}
-	auto num_zeroes_to_add = 30 - std::distance(it, str.end());
+	auto num_zeroes_to_add = 29 - std::distance(it, str.end());
 	auto raw = str + std::string(num_zeroes_to_add, '0');
 
 	// Remove leading zeroes
@@ -136,10 +136,10 @@ FString UNanoBlueprintLibrary::RawToNano(FString raw) {
 	// Insert a decimal 30 decimal places from the right
 	auto str = std::string(TCHAR_TO_UTF8(*raw));
 
-	if (str.size() <= 30) {
+	if (str.size() <= 29) {
 		str = "0."s + std::string(30 - str.size(), '0') + str;
 	} else {
-		auto decimal_index = str.size() - 30;
+		auto decimal_index = str.size() - 29;
 		str.insert(str.begin() + decimal_index, '.');
 	}
 
