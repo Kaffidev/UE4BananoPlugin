@@ -22,8 +22,8 @@ https://youtu.be/RTD2b78X1oc
 
 ### To run your own test servers (recommended for any intense testing)
 Requires a nano node, npm and nodejs installed.
-1. Run the nano_node after enabling rpc and websocket in `config-node.toml` file.
-`nano_node --daemon`
+1. Run the banano_node after enabling rpc and websocket in `config-node.toml` file.
+`banano_node --daemon`
 2. `cd TestServer`
 3. Modify the `config.js` settings to be applicable for your system.
 4. `npm install`
